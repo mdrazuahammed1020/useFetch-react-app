@@ -1,0 +1,32 @@
+.post-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.post{
+    /* border: 1px solid red; */
+    background-color: rgba(172, 150, 31, 0.089);
+    text-align: center;
+}
+
+.post h2{
+    color: rgba(44, 48, 25, 0.719);
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 830px) {
+    .post-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+
+@media only screen and (max-width: 470px) {
+    .post-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+        
+    }
+}

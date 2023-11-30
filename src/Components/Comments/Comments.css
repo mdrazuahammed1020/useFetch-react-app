@@ -1,0 +1,35 @@
+.comment-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.comment{
+    /* border: 1px solid red; */
+    background-color: rgba(31, 172, 94, 0.089);
+    text-align: justify;
+    padding: 5px;
+}
+
+.comment h3{
+    background-color: rgba(107, 117, 57, 0.267);      
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    color: rgba(24, 58, 39, 0.678);
+}   
+
+
+@media only screen and (max-width: 830px) {
+    .comment-container{
+    grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .comment-container{
+    grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
